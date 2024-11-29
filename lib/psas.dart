@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:psas_mobile_pplg3/Welcome.dart';
 
 class Psas extends StatelessWidget {
   const Psas({super.key});
@@ -32,7 +33,14 @@ class Psas extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 24),
-                  ElevatedButton(onPressed: () {}, child: Text("Login"),
+                  ElevatedButton(onPressed: () {
+                    {
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> WelcomePage())
+                      );
+                    }
+                  },
+                   child: Text("Login"),
+                  
                   ),
                 ],
           ),
